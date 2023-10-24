@@ -1,0 +1,64 @@
+/* Font Declaration */
+@font-face {
+    font-family: 'Optima';
+    src: url('path_to_your_font/OPTIMA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global Styles */
+body, html {
+    font-family: 'Optima', sans-serif;
+    background-color: #FAF3E0; /* Light beige background */
+    color: #333; /* Default text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for contrast */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for contrast */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    background-color: #A89F91; /* Pastel brown background */
+    color: #fff; /* White text for contrast */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8C8776; /* Darker shade on hover */
+}
+
+/* Links */
+a {
+    color: #8C8779; /* Default blue color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8C8777; /* Darker shade of blue on hover */
+}
+
+/* Add any other styles or modifications as needed */

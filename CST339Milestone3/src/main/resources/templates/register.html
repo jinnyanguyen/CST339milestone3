@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layouts/defaultTemplate">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body class="container">
+    <h1 class="text-center mt-5 mb-3">Register for Access</h1>
+    <form th:action="@{/register}" th:object="${user}" method="post" class="mb-3">
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" th:field="*{firstName}" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" th:field="*{lastName}" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" th:field="*{username}" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" th:field="*{password}" class="form-control" required>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+    </form>
+    <a th:href="@{/}" class="btn btn-secondary">Back to Home</a>
+    
+    <!-- Optional: Including Bootstrap's JS for any interactive components -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
